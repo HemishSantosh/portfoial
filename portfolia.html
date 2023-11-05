@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>portfolio</title>
+        <link href="portfolio.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2db31c61a3.js" crossorigin="anonymous"></script>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontains=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classlist.remove("active-tab");
+                }
+                event.currentTarget.classlist.add("active-link");
+                document.getElementById(tabname).classlist.add("active-tab")
+            }
+        </script>
+    
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="text">
+                    <p>PYTHON Developer</p>
+                    <h1>Hi,I'm <span>Hemish S</span><br> From Karnataka</h1>
+                </div>
+            </div>
+        </div>
+        <!----------------about---------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="profile.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                <p>I am a dedicated and enthusiastic engineering student at srinivas university,currently pursuing a degree in electronics and communication.My passion for technology and problem-solving has led me to focus on web development,where I've honned
+                     my skills in various programming language and technology.i am deeply interested in wed development and enjoy creating visually appealing and functional websites.My goal is to continue expanding my knowledge and skills in tjis field,exploring
+                      new frameworks and technologies to stay at the forefront of web development trends.I aspire to become a proficient full-stack web developer, capable of building dynamic and interactive web applications. Additionally, I plan to explore machine learning
+                       and artificial intelligence as they relate to web development to create smarter and more personalized online experiences.
+                </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experiance')">Experiance</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                           
+                        </div>
+                        <div class="tab-contents active-tab" id="skills" >
+                            <ul>
+                                <li><span>python</span><br>developer</li>
+                                <li><span>python</span><br>developer</li>
+                                <li><span>python</span><br>developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiance">
+                            <ul>
+                                <li><span>py</span><br>developer</li>
+                                <li><span>py</span><br>developer</li>
+                                <li><span>py</span><br>developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>pyt</span><br>developer</li>
+                                <li><span>pyth</span><br>developer</li>
+                                <li><span>python</span><br>developer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-windows"></i>
+                        <h2>Web Design</h2>
+                        <p>
+                            Web design is the process of creating visually appealing and functional websites. 
+                            It involves layout design, color schemes, typography, and user experience considerations. 
+                            Web designers use various tools and technologies to craft websites that are both aesthetically
+                             pleasing and easy to navigate, enhancing the overall online user experience.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python</h2>
+                        <p>Python is a versatile, high-level programming language known for its simplicity and readability.
+                             It supports a wide range of applications, including web development, data analysis, and automation. 
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>Android</h2>
+                        <p>Android app development is the process of creating mobile applications for devices running the Android operating system. 
+                            Developers use programming languages like Java or Kotlin, alongside Android Studio, to design and code apps. 
+                            These apps can be published on the Google Play Store, offering a wide range of functionalities to Android users.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="calculator.jpg">
+                        <div class="layer">
+                            <h1>Calculator</h1>
+                            <p>This is a Simple Mini Project, It is used to do some Task like a Addition,Subtraction,Multipication&Division....</p>
+                            <a href="calculator\calculator1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="mu.jpg">
+                        <div class="layer">
+                            <h1>Android App</h1>
+                            <p>It is an Android Application, it is used to make a Video call,message,Tranfer  photo ,Video & file</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="mob.jpg">
+                        <div class="layer">
+                            <h1>Tourest Webpage</h1>
+                            <p>This Webpage is to book a tour of yours and,It will guide your tour</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-----------------contact--------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class='sub-title'>Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>hempragathi51@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9036074605</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="10" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2"> Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © Hemish.Made with <i class="fa-solid fa-heart"></i> by My Tutorial</p>
+                </div>
+            </div>
+        </div>
+      
+    </body>
+</html>
